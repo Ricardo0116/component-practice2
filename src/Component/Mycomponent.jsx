@@ -12,10 +12,12 @@ const Mycomponent = () => {
 
     }
 
+    console.log(student);
+
   return (
     <div>
         <hr />
-        <p>este es mi primer componente</p>
+        <p>Este es mi Primer Componente</p>
         <h2>Temas de React</h2>
         <ul>
             <li>Componentes</li>
