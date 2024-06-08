@@ -3,8 +3,18 @@ import './App.css';
 import Mycomponent from './Component/Mycomponent';
 import SecondComponent from './Component/SecondComponent';
 import ThirdComponent from './Component/ThirdComponent';
+import Child from './Component/Child';
+import { useState } from 'react';
 
 function App() {
+
+  const [name, setName] = useState("Mar"); 
+  const [message, setMessage] = useState("Mar"); 
+  
+  const addMessage = (message) => {
+    console.log(message);
+    setMessage(message);
+  }
 
   const medicalRecord = {
     heigth: "160",
@@ -19,7 +29,9 @@ function App() {
         <p>
           Estructura inicial del proyecto y limpia
         </p>
-        
+      <h2>Mensaje del Hijo:</h2>
+      <p>{message}</p>
+      <Child name={name} setName={setName} addMessage={addMessage}/>
       <SecondComponent />
       <ThirdComponent 
         name="Ricardo"
