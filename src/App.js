@@ -5,6 +5,7 @@ import SecondComponent from './Component/SecondComponent';
 import ThirdComponent from './Component/ThirdComponent';
 import Child from './Component/Child';
 import { useState } from 'react';
+import FourthComponent from './Component/FourthComponent';
 
 function App() {
 
@@ -29,6 +30,13 @@ function App() {
         <p>
           Estructura inicial del proyecto y limpia
         </p>
+
+        <div>
+          <hr />
+            <FourthComponent />
+          <hr />
+        </div>
+        
       <h2>Mensaje del Hijo:</h2>
       <p>{message}</p>
       <Child name={name} setName={setName} addMessage={addMessage}/>
