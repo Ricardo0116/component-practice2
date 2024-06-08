@@ -3,11 +3,11 @@ import React from 'react'
 const Child = ({ name, setName, addMessage }) => {
 
     const sendMenssage = () => {
-        addMessage ("este es el mensaje del HIJO");
+        addMessage ("este es el mensaje del HIJO Mar");
     }
 
     const changeName = () => {
-        setName ("Nuevo Nombre Hijo")
+        setName ("Nuevo Nombre Hijo Mar")
     }
 
   return (

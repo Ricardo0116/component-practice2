@@ -18,7 +18,7 @@ function App() {
   }
 
   const medicalRecord = {
-    heigth: "160",
+    heigth: "165cm",
     bloodGroup: "O+",
     allergies: "none"
   }
@@ -36,7 +36,7 @@ function App() {
             <FourthComponent />
           <hr />
         </div>
-        
+
       <h2>Mensaje del Hijo:</h2>
       <p>{message}</p>
       <Child name={name} setName={setName} addMessage={addMessage}/>
