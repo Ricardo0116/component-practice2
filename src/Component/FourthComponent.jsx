@@ -26,6 +26,15 @@ const FourthComponent = () => {
 // onMouserEnter y onMouseLeave con una caja funcion con Console Log 
     const handleMouseCL = (e, text) => {
         console.log(`Haz ${text} la caja`)
+
+        }
+//onFocus
+    const insideInput = (e) => {
+        console.log("Estas dentro del input, escrbie tu nombre!!!")
+    }
+//onBlur
+    const outsideInput = (e) => {
+        console.log("estas afuera del INPUT, Adios!!!")
     }
 
 
@@ -77,6 +86,13 @@ const FourthComponent = () => {
         </div>
 
         {/*Evento Focus y Blur*/}
+        <div className='mt-4'>
+            <input type="text" 
+            onFocus={ insideInput }
+            onBlur={ outsideInput }
+            placeholder='Escribe un Nombre'
+            />
+        </div>
         
     </div>
   )
